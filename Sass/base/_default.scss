@@ -1,0 +1,24 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    overflow-x: hidden;
+}
+
+:root {
+    font: {
+        size: 62.5%;
+    }
+}
+
+body {
+    font: {
+        family: $fonte_familia;
+        size: 1.6rem;
+        weight: 400;
+    }
+    color: $cor_preto;
+    background-color: $cor_branco;
+}
