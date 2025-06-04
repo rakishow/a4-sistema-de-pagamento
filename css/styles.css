@@ -18,43 +18,70 @@ body {
   background-color: #f4f4f4;
 }
 
-header {
-  background-color: #b388eb;
-  color: #f4f4f4;
+#header_secundary, #header {
   padding: 1.6rem 3.2rem;
   box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.1);
 }
-header h2 {
+#header_secundary #logo, #header #logo {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 5px;
+}
+#header_secundary #logo h2, #header #logo h2 {
   font-size: tamanho_logo;
+}
+#header_secundary #logo i, #header #logo i {
+  font-size: 2rem;
 }
 
 footer {
   margin-top: 8rem;
   padding: 2rem;
   text-align: center;
+}
+
+#header {
+  background-color: #679756;
+  color: #f4f4f4;
+}
+#header #logo i {
+  color: #f4f4f4;
+}
+
+#header_secundary {
+  background-color: #f4f4f4;
+  color: #679756;
+}
+#header_secundary #logo i {
+  color: #679756;
+}
+
+footer {
   font-size: 0.9rem;
-  color: #586069;
+  color: #454c53;
   background-color: #f4f4f4;
   border-top: 1px solid #e1e4e8;
 }
 
-section {
-  max-width: 80rem;
+#main_init {
+  max-width: 75rem;
   margin: 6rem auto;
   padding: 0 2rem;
   text-align: center;
 }
-section h1 {
+#main_init #main_init-h2 {
   font-size: 3rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.8rem;
   color: #000000;
 }
-section p {
+#main_init #main_init-description {
   font-size: 1.6rem;
-  color: #586069;
-  margin-bottom: 3.2rem;
+  color: #454c53;
+  line-height: 2.2rem;
+  margin-bottom: 2.4rem;
 }
-section button {
+#main_init #main_init-btn {
   background-color: #333;
   color: #f4f4f4;
   border: 1px solid transparent;
@@ -64,7 +91,7 @@ section button {
   cursor: pointer;
   transition: background 0.2s ease, border 0.2s ease;
 }
-section button:hover {
+#main_init #main_init-btn:hover {
   background-color: #24292f;
   border-color: #1b1f23;
 }

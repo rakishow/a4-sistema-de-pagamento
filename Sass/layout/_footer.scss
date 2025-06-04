@@ -1,7 +1,5 @@
 footer {
-  margin-top: 8rem;
-  padding: 2rem;
-  text-align: center;
+ @extend %footer-base;
   font-size:$tamanho_texto_discreto;
   color: $cor_cinza_escuro;
   background-color: $cor_branco;

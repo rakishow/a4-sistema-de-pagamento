@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -21,4 +20,59 @@ body {
     }
     color: $cor_preto;
     background-color: $cor_branco;
+}
+
+%header-base {
+  padding: 1.6rem 3.2rem;
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.1);
+
+  #logo {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 5px;
+
+    h2 {
+      font-size: tamanho_logo;
+    }
+
+    i {
+      font-size: $tamanho_logo_padrao;
+    }
+  }
+}
+
+%footer-base {
+   margin-top: 8rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+@mixin texto-base(
+    $tamanho: $tamanho_p_padrao, 
+    $cor: $cor_cinza_escuro, 
+    $lineHeight: $line_height_padrao) {
+    font-size: $tamanho;
+    color: $cor;
+    line-height: $lineHeight;
+}
+
+@mixin botao-base(
+    $corBackPrinc:$cor_preto, 
+    $corTexto: $cor_branco, 
+    $tamTexto: $tamanho_p_padrao, 
+    $corBackHover: $cor_preto_Azulado) {
+  background-color: $corBackPrinc;
+  color: $corTexto;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: $tamTexto;
+  cursor: pointer;
+  transition: background 0.2s ease, border 0.2s ease;
+
+  &:hover {
+    background-color: $corBackHover;
+    border-color: $cor_borda_btn;
+  }
 }

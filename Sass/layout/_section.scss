@@ -1,35 +1,21 @@
-
-section {
-  max-width: 80rem;
+#main_init {
+  max-width: 75rem;
   margin: 6rem auto;
   padding: 0 2rem;
   text-align: center;
 
-    h1 {
+    #main_init-h2{
         font-size: $tamanho_h1_padrao;
-        margin-bottom: 1.6rem;
+        margin-bottom: 1.8rem;
         color: #000000;
     }
  
-    p {
-       font-size: $tamanho_p_padrao;
-       color: $cor_cinza_escuro;
-       margin-bottom: 3.2rem;
-      }
-      
-    button {
-    background-color: $cor_preto;
-    color: $cor_branco;
-    border: 1px solid transparent;
-    border-radius: 6px;
-    padding: 12px 24px;
-    font-size: $tamanho_p_padrao;
-    cursor: pointer;
-    transition: background 0.2s ease, border 0.2s ease;
+    #main_init-description{
+      @include texto-base();
+      margin-bottom: 2.4rem;
     }
-
-    button:hover {
-        background-color: #24292f;
-        border-color: #1b1f23;
+      
+    #main_init-btn{
+        @include botao-base();
     }
 }
